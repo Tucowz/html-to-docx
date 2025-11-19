@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  html2docx:
+    build: .
+    container_name: html2docx
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
